@@ -1,0 +1,407 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ПЕРЕЕЗД</title>
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+    <script	src="js/bootstrap.min.js" type="text/javascript" ></script>
+    
+    <script	src="js/jquery.smint.js" type="text/javascript" ></script>
+    
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
+    
+    <script src="less.js" type="text/javascript"></script>
+    
+    <script src="js/isotop.js"></script>
+
+	<script src="js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+
+
+	$('.collapse').collapse();
+
+
+
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+
+	var dd = $('.vticker').easyTicker({
+		direction: 'up',
+		easing: 'easeInOutBack',
+		speed: 'slow',
+		interval: 4000,
+		height: 'auto',
+		visible: 1,
+		mousePause: 0,
+		controls: {
+			up: '.up',
+			down: '.down',
+			toggle: '.toggle',
+			stopText: 'Stop !!!'
+		}
+	}).data('easyTicker');
+
+});
+
+	$(function () { $('.tooltip-hide').tooltip('hide');});
+
+
+
+$(document).ready(function(){
+	// Portfolio
+
+
+				var $container = $('.portfolioContainer');
+				$container.isotope({
+					filter: '*',
+					animationOptions: {
+						duration: 750,
+						easing: 'linear',
+						queue: false
+					}
+				});
+
+				$('.portfolioFilter a').click(function(){
+					$('.portfolioFilter .current').removeClass('current');
+					$(this).addClass('current');
+
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+						filter: selector,
+						animationOptions: {
+							duration: 750,
+							easing: 'linear',
+							queue: false
+						}
+					 });
+					 return false;
+
+	});
+
+	$(".group2").colorbox({rel:'group2', transition:"fade"});
+
+ });
+
+ $('.carousel').carousel();
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrap ">
+	<div class="section sTop">
+		<div class="top-container">
+    	
+            <div class="container">
+                
+                <div class="large-logo">
+                    <a href="#"><img src="img/logo1.png" alt="logo" /></a>
+                </div>
+                
+                <div class="vticker">
+                    <ul>
+                        <li>НУЖНЫ ГРУЗОПЕРЕВОЗКИ</li>
+                        <li>В КРАТЧАЙШИЕ СРОКИ</li>
+                        <li>МЫ ОБЯЗАТЕЛЬНО ПОМОЖЕМ</li>
+                    </ul>
+                </div>
+
+                <a href="#sTop" class="click-down"><i class="fa fa-chevron-circle-down"></i></a>
+                
+            </div>
+            
+        </div><!-- /top-container -->
+        
+	</div>
+
+	<div class="subMenu" >
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-2 th-logo">
+                	<a href="#sTop">
+                    	<b>ООО "ОСИПОВ"</b>
+                    </a>
+                </div>
+                <div class="col-md-10">
+                    <div class="inner pull-right">
+                        <a href="#about" class="subNavBtn"> О нас</a>
+                        <a href="#s2" class="subNavBtn">Услуги</a>
+                        <a href="#s7" class="subNavBtn">Контакты</a>
+                    </div>
+            	</div>
+            </div>
+        </div>
+	</div>
+
+	<div class="section about">
+		<div class="inner ">
+			<div class="about-artical">
+            	<h2>О компании</h2>
+                <p>Специализация нашей компании – организация переезда офиса\ квартиры \ дачи, услуги грузчиков, обслуживание выставок и дополнительные услуги связанные с переездом.
+                    Мы приобрели огромный опыт в организации переездов: от маленьких квартир до крупных складов и офисов.Мы гарантируем качество, скорость и профессионализм сотрудников!
+                    Молодость – преимущество нашей компании. Мы молоды и сильны, что важно для организации переезда. Мы подготовили для Вас ценновые пакеты услуг - стоимость переезд \ перевозки.</p>
+                <h4>Сотрудничая с нами, Вы можете рассчитывать на:</h4>
+                <h6>-нашу пунктуальность</h6>
+                <h6>-профессиональную организацию</h6>
+                <h6>-вежливое общение наших сотрудников</h6>
+                <h6>-материальные гарантии</h6>
+                <h6>-всегда быть в курсе происходящей работы</h6>
+                <h6>-на человеческое понимание</h6>
+                <h6>-надежных партнеров в нашем лице</h6>
+
+                <p></p>
+                <div class="creative-minds">
+                	<div class="row-cm">
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/flat.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">Квартирные переезды</h4>
+                        </div>
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/dacha.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">Дачные переезды</h4>
+                        </div>
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/Office.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">Офисные переезды</h4>
+                        </div>
+                    </div>
+                </div><!-- /creative-minds -->
+            </div><!-- /about-artical -->
+		</div>
+	</div>
+
+
+
+
+	<div class="section s2">
+		<div class="inner">
+				<div class="container">
+                
+                	<div class="services">
+                    	
+                        <div class="services-tops">
+                        	
+                            <h2>Услуги</h2>
+
+                        </div><!-- /services-tops -->
+                        
+                        <div class="row">
+                        	
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                	<i class="fa fa-truck"></i>
+                                    <h6>Переезд Офиса</h6>
+                                    
+                                    <p>Переезд офиса подразумевает под собой трату времени, энергии. Компания поможет осуществить перевозку офиса без лишних хлопот, а главное без прерывания рабочего процесса — переезд офиса можно осуществить в выходные дни.
+                                        Благодаря слаженной работе наших специалистов все будет сделано максимально быстро и без ваших Переезд офиса, переезд квартир, переезд дач, перевозка мебели, офисный переезд, квартирынй переезд, дачный переезд, перевозка мебелиэнергозатрат.
+                                        Работа начинается с приезда менеджера, который на месте проведет всю оценку работ, скажет стоимость перевозки офиса, и все это для вас абсолютно бесплатно. Далее все наши действия ведутся по отлаженной схеме — мы доставляем в офис коробки, для личных вещей ваших сотрудников.
+                                        Специалисты нашей компании при переезде офиса обезопасят мебель и оргтехнику, упаковав все в качественный упаковочный материал. Далее все вещи грузятся в транспорт с мебельным фургоном. В новом офисе мы осуществляем распаковку мебели, расстановку мебели по заранее оговоренному плану.
+                                        Перевозку офиса контролирует менеджер нашей компании — это позволяет осуществить переезд максимально быстро. Вам остается только начать работу с новыми силами в обновленном офисе!</p>
+                                    
+                                </div><!-- /services-box -->
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                    <i class="fa fa-truck"></i>
+                                    <h6>Квартирный переезд</h6>
+                                    
+                                    <p>Квартирный переезд, это всегда особенное событие для каждого человека и тем более для целой семьи. В компание всегда помнят об этом и делают так, что бы этот этап в жизни каждого из наших клиентов прошел максимально гладко и оставил только положительные впечатления.
+                                        Для уточнения деталей и стоимости переезда выезжает менеджер. Переезд офиса, переезд квартир, переезд дач, перевозка мебели, офисный переезд, квартирынй переезд, дачный переезд, перевозка мебели. Эта услуга абсолютно бесплатна, но очень полезна.
+                                        Менеджер подробно расскажет вам о всех этапах переезда и составит подробную смету. Этот же сотрудник будет контролировать все этапы переезда и проследит за тем, что бы все было выполнено идеально.
+                                        Перед началом организации Вашего переезда на новую квартиру, мы заключаем договор, согласно которому наша компания несет полную материальную ответственность за сохранность всего перевозимого имущества. В договоре также указываются сроки и условия переезда.
+                                        Оплата, согласно договору, производится по окончании всех работ. В любое удобное для Вас время хорошо слаженная бригада профессиональных грузчиков тщательно упакует, промаркирует, погрузит, разгрузит и расставит Ваше имущество согласно Вашим пожеланиям.
+                                        Внимание! Приятная необходимость! Наши специалисты защищают в процессе работы полы и косяки специальным материалом с целью исключить порчу поверхностей. Далее они вывозят весь мусор, образовавшийся в процессе работ. Поздравляем! Можете уже пригласить гостей на новоселье!</p>
+                                    
+                                </div><!-- /services-box -->
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                    <i class="fa fa-truck"></i>
+                                    <h6>Дачный переезд</h6>
+
+                                    <p>Проводить время на даче свойственно не только русскому или белорусу, но и людям тех континетов, у которых с приходом лета появляется плюсовая температура на термометре. В таких случаях очень часто пользуются спросом услуги дачных переездов.
+                                        Здесь обычно в расчет берутся мебельные элементы, без которых можно забыть о словах уют и комфорт. Так как габариты дачных помещений зачастую не позволяют внести трехстворчатый шкаф или кровать, здесь приходится произвести разборку и сборку мебели.<br>
+                                        В целях экономии денежных средств люди очень часто хотят перевезти за несколько рейсов все вещи в багажниках личного автотранспорта. Но если сделать несложный расчет и совместить трудности, возникаемые без участия грузчиков и мебельного фургона, то можно увидеть, сколько много хлопот доставляет самостоятельная перевозка вещей на дачу.
+                                        Поэтому мы рекомендуем заказать дачный переезд у нас и вы получите возможность переехать на дачу без всяких хлопот и начать дачный сезон с улыбкой на лице.</p>
+                                </div><!-- /services-box -->
+                            </div>
+                        
+                        </div>
+                        
+                    </div><!-- /services -->
+                
+                </div>
+		</div>
+	</div>
+
+§
+
+    <div class="section s7">
+		<div class="inner">
+        
+            <div class="transparent-bg">
+                <div class="bcg">
+                    <div class="bcg-bg bcg-bg-blk">
+                    
+                    <div class="container">
+                                
+                                <div class="contact">
+                                    
+                                    <h1>Контакты</h1>
+                                    
+                                    <div class="row">
+                                    	
+                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    
+                                            <div class="contact-form">
+                                                <form class="form-horizontal">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Имя</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите Имя">
+                                                              </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Email</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите Email">
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Сообщение</label>
+                                                                <textarea class="form-control" rows="3"></textarea>
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                    <div class="controls">
+                                                    <button type="button" class="btn btn-default btn-lg">Отправить</button>
+                                                    </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        	
+                                            	<div class="address">
+                                                    <h3>Адрес:</h3>
+                                                    <i class="icons-marker icon-home"></i>
+                                                    <div class="contact-address">
+                                                        Город Брест <br>
+                                                        Улица Пушкина <br>
+                                                        13.
+                                                    </div>
+                                                </div><!--End address-->
+                                                
+                                                <div class="address">
+                                                    <h3>Телефон: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Вайбер:</h3>
+                                                    <div class="phone">
+                                                        <i class="icon-volume-down"></i>
+                                                        <span class="contact-address">
+                                                            +375(29)529-82-61  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;  +375(29)652-78-73
+                                                        </span>
+                                                    </div>
+                                                    <div class="phone">
+                                                        <i class="icon-print"></i>
+                                                        <div class="contact-address">
+                                                            +375(33)674-42-94 &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp; +375(33)674-42-94
+                                                        </div>
+                                                    </div>
+                                                </div><!--End address-->
+                                                
+                                                <div class="address">
+                                                    <h3>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Skype:</h3>
+                                                    <div class="phone">
+                                                        <i class="icon-envelope"></i>
+                                                        <div class="contact-address">
+                                                            vavit@tut.by &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; singapur.1111
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                     </div>
+                                      
+                                        
+                                </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+	
+</div>
+    
+    
+</body>
+</html>
